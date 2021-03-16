@@ -8,8 +8,8 @@ Installatie:
 [2] Na installatie de plugin activeren door op uw WordPress-installatie in te loggen (doorgaans op {uw-site.nl}/wp-admin), en dan op Plugins te klikken. Vervolgens op Activeren klikken bij deze plugin.
 
 [3] Na activatie vindt u onder Instellingen de pagina UwBoeking-instellingen. Hier vindt u de volgende velden:
-[3a] Uw API-sleutel*
-[3b] De gewenste taalcode (bijv. nl)*
+[3a] Uw API-sleutel *verplicht
+[3b] De gewenste taalcode (bijv. nl) *verplicht
 [3c] De pagina waar u de overzichtsshortcode wenst te plaatsen ([uwboeking-lijst]).
 [3d] Uitschakelen van de standaardstijl (als u uw eigen ontwerp wenst toe te passen)
 [3f] Uitschakelen van de sliderstijl en scripts (als u uw eigen slider/afbeeldingsweergave wenst toe te passen)
