@@ -13,7 +13,7 @@ Installatie:
 [3c] De pagina waar u de overzichtsshortcode wenst te plaatsen ([uwboeking-lijst]).
 [3d] Uitschakelen van de standaardstijl (als u uw eigen ontwerp wenst toe te passen)
 [3f] Uitschakelen van de sliderstijl en scripts (als u uw eigen slider/afbeeldingsweergave wenst toe te passen)
-[3g] Aanvullende CSS voor overzicht, doorklik en zoekformulier; bijv. om conflicten met themastijlen op te lossen.
+[3g] Aanvullende CSS voor overzicht, doorklik en zoekformulier; bijv. om conflicten met themastijlen op te lossen. (Bij twijfel leeg laten)
 
 [4] Plaats op de pagina die u bij [3c] hebt opgegeven de shortcode [uwboeking-lijst]
 
