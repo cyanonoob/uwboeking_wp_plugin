@@ -15,6 +15,6 @@ Installatie:
 [3f] Uitschakelen van de sliderstijl en scripts (als u uw eigen slider/afbeeldingsweergave wenst toe te passen)
 [3g] Aanvullende CSS voor overzicht, doorklik en zoekformulier; bijv. om conflicten met themastijlen op te lossen.
 
-[6] Plaats op de pagina die u bij [3c] hebt opgegeven de shortcode [uwboeking-lijst]
+[4] Plaats op de pagina die u bij [3c] hebt opgegeven de shortcode [uwboeking-lijst]
 
-[6] Plaats eventueel waar u het zoekformulier wenst de shortcode [uwboeking-zoek]
+[5] Plaats eventueel waar u het zoekformulier wenst de shortcode [uwboeking-zoek]
