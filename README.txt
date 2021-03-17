@@ -10,11 +10,11 @@ Installatie:
 [3] Na activatie vindt u onder Instellingen de pagina UwBoeking-instellingen. Hier vindt u de volgende velden:
 [3a] Uw API-sleutel *verplicht
 [3b] De gewenste taalcode (bijv. nl) *verplicht
-[3c] De pagina waar u de overzichtsshortcode wenst te plaatsen ([uwboeking-lijst]).
+[3c] De pagina waar u de overzichtsshortcode wenst te plaatsen ([uwboeking_lijst]).
 [3d] Uitschakelen van de standaardstijl (als u uw eigen ontwerp wenst toe te passen)
 [3f] Uitschakelen van de sliderstijl en scripts (als u uw eigen slider/afbeeldingsweergave wenst toe te passen)
 [3g] Aanvullende CSS voor overzicht, doorklik en zoekformulier; bijv. om conflicten met themastijlen op te lossen. (Bij twijfel leeg laten)
 
-[4] Plaats op de pagina die u bij [3c] hebt opgegeven de shortcode [uwboeking-lijst]
+[4] Plaats op de pagina die u bij [3c] hebt opgegeven de shortcode [uwboeking_lijst]
 
-[5] Plaats eventueel waar u het zoekformulier wenst de shortcode [uwboeking-zoek]
+[5] Plaats eventueel waar u het zoekformulier wenst de shortcode [uwboeking_zoek]
