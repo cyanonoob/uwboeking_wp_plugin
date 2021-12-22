@@ -69,8 +69,18 @@ class Uwboeking_Wp_Plugin_Public {
 
 	public function sc_archive($atts) {
 		$css = $this->options['disable_css'] != true;
+		$arrContextOptions=array(
+			"ssl"=>array(
+				"verify_peer"=>false,
+				"verify_peer_name"=>false,
+			),
+		);
 		if (isset($_GET['acc_id'])) {
-			$feed = file_get_contents('http://www.uwboeking.com/class/class.SearchBookAPIx.php?authID='.$this->options['api_key'].'&lang='.$this->options['lang'].'&houseID='.$_GET['acc_id']);
+			$feed = file_get_contents(
+				'http://www.uwboeking.com/class/class.SearchBookAPIx.php?authID='.$this->options['api_key'].'&lang='.$this->options['lang'].'&houseID='.$_GET['acc_id'],
+				false,
+				stream_context_create($arrContextOptions)
+			);
 			$acc = simplexml_load_string($feed);
 			$acc = $acc->verblijf;
 			$lang = $this->options['lang'];
@@ -82,7 +92,13 @@ class Uwboeking_Wp_Plugin_Public {
 			$van = isset($_GET['begin']) ? strtotime($_GET['begin']) : 1;
 			$tot = isset($_GET['eind']) ? strtotime($_GET['eind']) : 1;
 			$pers = isset($_GET['personen']) ? $_GET['personen'] : 1;
-			$feed = file_get_contents('http://www.uwboeking.com/class/class.SearchBookAPI.php?authID='.$this->options['api_key'].'&lang='.$this->options['lang'].'&aantalPersonen='.$pers.'&datumVan='.$van.'&datumTot='.$tot);
+ 
+
+			$feed = file_get_contents(
+				'http://www.uwboeking.com/class/class.SearchBookAPI.php?authID='.$this->options['api_key'].'&lang='.$this->options['lang'].'&aantalPersonen='.$pers.'&datumVan='.$van.'&datumTot='.$tot,
+				false,
+				stream_context_create($arrContextOptions)
+			);
 			$accs = simplexml_load_string($feed);
 			$custom_css = $this->options['custom_css_archive'];
 			include plugin_dir_path( __FILE__ ) . 'partials/uwboeking-archive.php';
@@ -93,7 +109,17 @@ class Uwboeking_Wp_Plugin_Public {
 		$a = shortcode_atts(array(
 			'id' => '0'
 		));
-		$feed = file_get_contents('http://www.uwboeking.com/class/class.SearchBookAPIx.php?authID='.$this->options['api_key'].'&lang='.$this->options['lang'].'&houseID='.$a['id']);
+		$arrContextOptions=array(
+			"ssl"=>array(
+				"verify_peer"=>false,
+				"verify_peer_name"=>false,
+			),
+		);
+		$feed = file_get_contents(
+			'http://www.uwboeking.com/class/class.SearchBookAPIx.php?authID='.$this->options['api_key'].'&lang='.$this->options['lang'].'&houseID='.$a['id'],
+			false,
+			stream_context_create($arrContextOptions)
+		);
 		$acc = simplexml_load_string($feed);
 		$acc = $acc->verblijf;
 		$lang = $this->options['lang'];
