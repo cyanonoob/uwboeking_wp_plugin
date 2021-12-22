@@ -16,7 +16,7 @@
  * Plugin Name:       UwBoeking-plugin
  * Plugin URI:        brandom.nl
  * Description:       UwBoeking-plugin voor WordPress
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Geert van Dijk
  * Author URI:        brandom.nl
  * License:           GPL-2.0+

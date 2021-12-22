@@ -4,7 +4,7 @@
  * The public-facing functionality of the plugin.
  *
  * @link       brandom.nl
- * @since      1.1.0
+ * @since      1.0.0
  *
  * @package    Uwboeking_Wp_Plugin
  * @subpackage Uwboeking_Wp_Plugin/public
